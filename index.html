@@ -1,39 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Julie Andrew Guillena | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #4f46e5;
+            --secondary: #6366f1;
+            --bg: #f9fafb;
+            --text: #1f2933;
+            --muted: #6b7280;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: #fff;
+            padding: 4rem 1.5rem 5rem;
+            text-align: center;
+            position: relative;
+        }
+
+        .profile-pic {
+            width: 140px;
+            height: 140px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 5px solid #fff;
+            margin-bottom: 1rem;
+        }
+
+        header h1 {
+            font-size: 2.2rem;
+            font-weight: 700;
+        }
+
+        header p {
+            font-size: 1rem;
+            opacity: 0.95;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: -3rem auto 0;
+            padding: 1.5rem;
+        }
+
+        section {
+            background: #fff;
+            padding: 2rem;
+            border-radius: 16px;
+            margin-bottom: 2rem;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+        }
+
+        section h2 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        ul li {
+            margin-bottom: 0.6rem;
+            color: var(--muted);
+        }
+
+        ul li strong {
+            color: var(--text);
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1rem;
+        }
+
+        .card {
+            background: #f3f4f6;
+            padding: 1rem 1.2rem;
+            border-radius: 12px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            color: var(--muted);
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
 </head>
 <body>
+
     <header>
-        <img src="image/518284435_1645513089476322_6194428689489277333_n.jpg" alt="Profile Picture" class="profile-pic">
+        <img src="518284435_1645513089476322_6194428689489277333_n.jpg" alt="Profile Picture" class="profile-pic" />
         <h1>Julie Andrew Guillena</h1>
-        <p>Web Developer | Student | Enthusiast</p>
+        <p>Web Developer • Student • Tech Enthusiast</p>
     </header>
 
-    <section class="personal-info">
-        <h2>Personal Information</h2>
-        <ul>
-            <li><strong>Full Name:</strong> Julie Andrew Guillena</li>
-            <li><strong>Email:</strong> julie@example.com</li>
-            <li><strong>Phone:</strong> +63 912 345 6789</li>
-            <li><strong>Location:</strong> Philippines</li>
-        </ul>
-    </section>
+    <main>
+        <section>
+            <h2>Personal Information</h2>
+            <div class="info-grid">
+                <div class="card"><strong>Full Name:</strong><br>Julie Andrew Guillena</div>
+                <div class="card"><strong>Email:</strong><br>julie@example.com</div>
+                <div class="card"><strong>Phone:</strong><br>+63 912 345 6789</div>
+                <div class="card"><strong>Location:</strong><br>Philippines</div>
+            </div>
+        </section>
 
-    <section class="accomplishments">
-        <h2>Accomplishments</h2>
-        <ul>
-            <li>Completed a Web Development Course in 2025</li>
-            <li>Participated in National Coding Competition</li>
-            <li>Developed a personal portfolio website</li>
-        </ul>
-    </section>
+        <section>
+            <h2>Accomplishments</h2>
+            <ul>
+                <li>✔ Completed a Web Development Course (2025)</li>
+                <li>✔ Participated in a National Coding Competition</li>
+                <li>✔ Built and deployed a personal portfolio website</li>
+            </ul>
+        </section>
+    </main>
 
     <footer>
         <p>&copy; 2026 Julie Andrew Guillena. All rights reserved.</p>
     </footer>
+
 </body>
 </html>
